@@ -6,7 +6,7 @@ with open("requirements.txt") as reqs:
     install_requires = reqs.read().splitlines()
 
 try:
-    long_desc = open("README.md").read()
+    long_desc = open("README.md", encoding = 'cp437')
 except IOError:
     long_desc = "Failed to read README.md"
 
